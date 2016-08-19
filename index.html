@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+  </head>
+  <body>
+    <script type="text/javascript">
+    function createButtons(){
+      for( let i=1; i<=10; i++){
+        let btn = document.createElement("BUTTON");
+        btn.innerHTML = i
+        btn.id = i
+
+        btn.addEventListener("click", function(){
+          let alertContent = this.innerHTML
+          window.alert("This is button " + alertContent ) ;
+      })
+     document.body.appendChild(btn);
+   }
+}
+createButtons();
+    </script>
+  </body>
+</html>

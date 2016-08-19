@@ -33,6 +33,7 @@ class DynamicArray
   end
     @count -= 1
     @length -= 1
+    # count is not the index of the item we just popped
     @store[@count]
   end
 
@@ -91,8 +92,6 @@ class DynamicArray
       temp_store[i] = @store[i]
     end
 
-    @length = 0
-    @count = 0
-    @capacity
+    @store = temp_store
   end
 end
