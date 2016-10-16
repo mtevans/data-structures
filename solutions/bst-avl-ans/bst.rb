@@ -166,3 +166,33 @@ if __FILE__ == $PROGRAM_NAME
   p bst.preorder
   p bst.postorder
 end
+
+
+
+
+# def self.delete!(node, value)
+#     return nil unless node
+#
+#     if node.value < value
+#       return nil unless node.right
+#
+#       if node.right.value == value
+#         r_left = BinarySearchTree.max(node.right.left)
+#         r_right = BinarySearchTree.min(node.right.right)
+#         node.right = [r_left, r_right].max
+#       else
+#         BinarySearchTree.delete!(node.right, value)
+#       end
+#     else
+#       return nil unless node.left
+#
+#       if node.left.value == value
+#         r_left = BinarySearchTree.max(node.left.left)
+#         r_right = BinarySearchTree.min(node.left.right)
+#         node.left = [r_left, r_right].max
+#       else
+#         BinarySearchTree.delete!(node.left, value)
+#       end
+#
+#     end
+#   end
