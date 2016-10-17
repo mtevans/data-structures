@@ -80,7 +80,8 @@ Heap.prototype.heapifyDownSwapHelper = function(parent_idx, child_idx) {
 }
 
 
-
+// for heap sort, find last internal element (Math.floor(length/2)) and
+// traverse backwards through the array heapifying down with each element
 
 var x =  new Heap;
 
