@@ -160,8 +160,8 @@ test.insert(29)
 test.insert(3)
 test.insert(2)
 test.insert(14)
-
-
+console.log(test.root.right.right.value) // returns 28
+console.log(test.root.left.left.value)// returns 4
 
 test.delete(25)
-console.log(test.root.right.left.value)
+// console.log(test.root.right.left.value) // return 25
